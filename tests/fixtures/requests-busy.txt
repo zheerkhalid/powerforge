@@ -1,0 +1,24 @@
+DISPLAY:
+[PROCESS] \Device\HarddiskVolume3\Program Files\Google\Chrome\Application\chrome.exe
+Video Wake Lock
+
+SYSTEM:
+[DRIVER] Example High Definition Audio (HDAUDIO\FUNC_01&VEN_0000&DEV_0000&SUBSYS_00000000&REV_1000\4&0000000&0&0001)
+An audio stream is currently in use.
+[SERVICE] \Device\HarddiskVolume3\Windows\System32\svchost.exe (TermService)
+
+AWAYMODE:
+[PROCESS] \Device\HarddiskVolume3\Program Files\Example\recorder.exe
+Recording a show,
+part two
+
+EXECUTION:
+[PROCESS] \Device\HarddiskVolume3\Windows\System32\svchost.exe (wuauserv)
+Windows Update
+
+PERFBOOST:
+None.
+
+ACTIVELOCKSCREEN:
+None.
+

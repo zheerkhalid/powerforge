@@ -1,0 +1,6 @@
+
+Timer set by [SERVICE] \Device\HarddiskVolume3\Windows\System32\svchost.exe (SystemEventsBroker) expires at 03:12:45 on 25/11/2026.
+  Reason: Windows will execute 'NT TASK\Microsoft\Windows\UpdateOrchestrator\Universal Orchestrator Start' scheduled task that requested waking the computer.
+
+Timer set by [PROCESS] \Device\HarddiskVolume3\Program Files\Example\backup.exe expires at 07:00:00 on 12/24/2026.
+  Reason: Nightly backup

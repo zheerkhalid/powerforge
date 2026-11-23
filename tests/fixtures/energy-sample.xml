@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EnergyReport xmlns="http://schemas.microsoft.com/energy/2007">
+  <SystemInformation>
+    <ComputerName>EXAMPLE-PC</ComputerName>
+  </SystemInformation>
+  <Troubleshooter guid="00000000-0000-0000-0000-000000000000">
+    <AnalysisLog>
+      <LogEntry guid="00000000-0000-0000-0000-000000000001">
+        <Name>Power Policy:Display timeout is long (Plugged In)</Name>
+        <Severity>Warning</Severity>
+        <Description>The display is configured to turn off after longer than 10 minutes.</Description>
+        <Details>
+          <Detail><Name>Timeout (seconds)</Name><Value>3600</Value></Detail>
+        </Details>
+      </LogEntry>
+      <LogEntry guid="00000000-0000-0000-0000-000000000002">
+        <Name>Platform Timer Resolution:Platform Timer Resolution</Name>
+        <Severity>Error</Severity>
+        <Description>The default platform timer resolution is 15.6ms. A smaller resolution reduces battery life.</Description>
+        <Details>
+          <Detail><Name>Requested Period</Name><Value>10000</Value></Detail>
+          <Detail><Name>Requesting Process Path</Name><Value>player.exe</Value></Detail>
+        </Details>
+      </LogEntry>
+      <LogEntry guid="00000000-0000-0000-0000-000000000003">
+        <Name>USB Suspend:USB Device not Entering Suspend</Name>
+        <Severity>Warning</Severity>
+        <Description>The USB device did not enter the Suspend state.</Description>
+        <Details>
+          <Detail><Name>Device Name</Name><Value>USB Receiver</Value></Detail>
+          <Detail><Name>Host Controller Location</Name><Value>PCI\VEN_0000&amp;DEV_0000&amp;SUBSYS_00000000\3&amp;0000&amp;0&amp;A0</Value></Detail>
+          <Detail><Name>Serial Number</Name><Value>SN-1234</Value></Detail>
+          <Detail><Name>Class</Name><Value>{4d36e96f-e325-11ce-bfc1-08002be10318}</Value></Detail>
+        </Details>
+      </LogEntry>
+      <LogEntry guid="00000000-0000-0000-0000-000000000004">
+        <Name>Something new</Name>
+        <Severity>Information</Severity>
+        <Description>A description from Windows.</Description>
+      </LogEntry>
+    </AnalysisLog>
+  </Troubleshooter>
+</EnergyReport>

@@ -1,0 +1,4 @@
+Example Wi-Fi 7 Adapter
+HID Keyboard Device
+HID-compliant mouse
+

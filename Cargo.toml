@@ -1,0 +1,79 @@
+[package]
+name = "powerforge"
+version = "1.0.0"
+edition = "2021"
+description = "Battery health, power plans, keep-awake and sleep/wake diagnostics for Windows, in plain language"
+authors = ["Zheer Khalid (https://zheer.dev)"]
+homepage = "https://zheer.dev"
+repository = "https://github.com/zheerkhalid/powerforge"
+license = "MIT"
+
+[lib]
+name = "powerforge"
+path = "src/lib.rs"
+
+[[bin]]
+name = "PowerForge"
+path = "src/main.rs"
+# All tests live in the library and in tests/.
+test = false
+
+[dependencies]
+eframe = { version = "0.31.1", default-features = false, features = ["glow", "default_fonts"] }
+image = { version = "0.25", default-features = false, features = ["png"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Battery report, energy report and event log XML.
+roxmltree = "0.20"
+# Small, safe wrapper over the registry API (the start-with-Windows entry).
+winreg = "0.52"
+# Native open/save dialogs (uses the system dialogs, no extra runtime).
+rfd = { version = "0.15", default-features = false }
+
+[dependencies.windows]
+version = "0.58"
+features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Devices_DeviceAndDriverInstallation",
+    "Win32_Globalization",
+    "Win32_Graphics_Gdi",
+    "Win32_NetworkManagement_IpHelper",
+    "Win32_NetworkManagement_Ndis",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Com",
+    "Win32_System_Console",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_IO",
+    "Win32_System_Ioctl",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Performance",
+    "Win32_System_Pipes",
+    "Win32_System_Power",
+    "Win32_System_ProcessStatus",
+    "Win32_System_Registry",
+    "Win32_System_SystemInformation",
+    "Win32_System_SystemServices",
+    "Win32_System_Threading",
+    "Win32_System_Time",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+]
+
+[build-dependencies]
+tiny-skia = "0.11"
+embed-resource = "2.5"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+strip = true
+panic = "abort"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 2

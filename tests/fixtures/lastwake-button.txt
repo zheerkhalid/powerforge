@@ -1,0 +1,6 @@
+Wake History Count - 1
+Wake History [0]
+  Wake Source Count - 1
+  Wake Source [0]
+    Type: Fixed Feature
+    Power Button

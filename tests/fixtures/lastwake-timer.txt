@@ -1,0 +1,7 @@
+Wake History Count - 1
+Wake History [0]
+  Wake Source Count - 1
+  Wake Source [0]
+    Type: Wake Timer
+    Owner: [SERVICE] \Device\HarddiskVolume3\Windows\System32\svchost.exe (SystemEventsBroker)
+    Owner Supplied Reason: Windows will execute a scheduled task that requested waking the computer.
